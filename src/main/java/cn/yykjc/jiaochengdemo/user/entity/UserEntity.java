@@ -1,5 +1,7 @@
 package cn.yykjc.jiaochengdemo.user.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 public class UserEntity {
@@ -49,6 +51,7 @@ public class UserEntity {
         this.password = password;
     }
 
+    @JsonFormat(pattern = "yyyy-MM-dd")
     public Date getCreatetime() {
         return createtime;
     }
