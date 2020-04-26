@@ -12,7 +12,8 @@ import java.util.Map;
 
 /*
 *
-* RestController =@ResponseBody+@Controller
+*  重定向不能用：@RestController
+*  RestController =@ResponseBody+@Controller
 * */
 @Controller
 @RequestMapping("user")
@@ -30,7 +31,6 @@ public class UserController {
 
     @RequestMapping("/delById")
     public String delById(Integer id) {
-
         userService.delById(id);
         return "redirect:/index.html";
     }
