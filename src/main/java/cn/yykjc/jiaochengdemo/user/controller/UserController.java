@@ -14,6 +14,7 @@ import java.util.Map;
 *
 *  重定向不能用：@RestController
 *  RestController =@ResponseBody+@Controller
+* 测试webhook
 * */
 @Controller
 @RequestMapping("user")
